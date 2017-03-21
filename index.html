@@ -11,8 +11,35 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/mystyle.css"/>
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	<style>
+	.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+	background-color: #f9f9f9;
+    min-width: 160px;
+	max-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+	max-width: 200px;
+}
+
+.desc {
+    padding: 15px;
+    text-align: center;
+}
+</style>
 	</head>
 	<body class="loading">
 		<div id="wrapper">
@@ -33,11 +60,17 @@
 								<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
 							</ul>
 						</nav>
+						<div class="dropdown">
+						<h1>See the sights</h1>
+							<div class="dropdown-content">
+								<img src="assets/css/images/mountain1.jpeg">
+							</div>
+						</div>
 					</header>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<span class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>.</span>
+						<span class="copyright">&copy; Project by Charlie Brown: <a href="http://html5up.net">HTML5 UP</a>.</span>
 					</footer>
 
 			</div>
